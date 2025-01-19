@@ -122,4 +122,4 @@ setTimeout(() => {
     if (logo) {
         logo.style.display = 'none'; // Hides the logo after 3 seconds
     }
-}, 3000);
+}, 5000);
