@@ -116,3 +116,10 @@ function checkPassword() {
         alert("Incorrect password!");
     }
 }
+
+setTimeout(() => {
+    let logo = document.getElementById('library-logob');
+    if (logo) {
+        logo.style.display = 'none'; // Hides the logo after 3 seconds
+    }
+}, 3000);
