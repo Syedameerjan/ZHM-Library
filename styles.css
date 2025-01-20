@@ -86,31 +86,155 @@ tr:hover {
 /* Table responsive design */
 
 
-.social-buttons {
-    padding: 25px;
 
-    margin-top: 20px;
+/* Social Buttons */
+
+.social-buttons {
 
     display: flex;
 
-    gap: 10px;
+    gap: 20px;
 
     justify-content: center;
 
+    align-items: center;
+
+    margin-top: 20px;
+
 }
 
 
+
+/* Button Container */
+
+.social-buttons a {
+
+  margin: 10px;
+
+  padding: 10px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(circle, white 30%, gold 70%,blue 5%); /* Glossy gold effect */
+
+    position: relative;
+
+    transition: transform 0.20s ease, box-shadow 0.20s ease;
+
+    animation: blink 1.5s infinite alternate; /* Blinking effect */
+
+}
+
+
+
+/* Image Styling */
 
 .social-buttons img {
-    padding: 25px;
 
-    width: 40px;
+    width: 65%;
 
-    height: 40px;
-
-    cursor: pointer;
+    height: 65%;
 
 }
+
+
+
+/* Glossy Shine Effect */
+
+@keyframes shine {
+
+    0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.1); }
+
+    50% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.8); } /* Gold glow */
+
+    100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.1); }
+
+}
+
+
+
+/* Blinking Effect */
+
+@keyframes blink {
+
+    0% { opacity: 1; filter: brightness(1); }
+
+    100% { opacity: 0.7; filter: brightness(1.5); }
+
+}
+
+
+
+/* Hover Effect */
+
+.social-buttons a:hover {
+
+    transform: scale(1.1) rotate(15deg);
+
+    animation: shine 1s infinite alternate;
+
+}
+
+
+
+/* Individual Button Glow Colors */
+
+.social-buttons a.whatsapp:hover {
+
+    box-shadow: 0px 0px 30px #25d366;
+
+}
+
+
+
+.social-buttons a.call:hover {
+
+    box-shadow: 0px 0px 30px #ff9800;
+
+}
+
+
+
+.social-buttons a.location:hover {
+
+    box-shadow: 0px 0px 30px #4285f4;
+
+}
+
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .social-buttons {
+
+        gap: 10px;
+
+    }
+
+
+
+    .social-buttons a {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+}
+
 .logo-container {
     padding: 25px;
     text-align: center;
