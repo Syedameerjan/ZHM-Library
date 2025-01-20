@@ -129,9 +129,9 @@ tr:hover {
 
     position: relative;
 
-    transition: transform 1s ease, box-shadow 1s ease;
+    transition: transform 3s ease, box-shadow 3s ease;
 
-    animation: blink 3s infinite alternate; /* Blinking effect */
+    animation: blink 4s infinite alternate; /* Blinking effect */
 
 }
 
